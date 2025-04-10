@@ -62,7 +62,7 @@ C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\wwwroot\lib
 C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\images\First_Page_Background.jpg
+wwwroot\images\First_Page_Background.jpeg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

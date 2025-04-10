@@ -300,4 +300,4 @@ C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\obj\Debug\n
 C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\obj\Debug\net9.0\E-Learning Platform.genruntimeconfig.cache
 C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\obj\Debug\net9.0\ref\E-Learning Platform.dll
 C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\obj\Debug\net9.0\E-Learning Platform.sourcelink.json
-C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\obj\Debug\net9.0\compressed\k7x24t14yo-3ofiw8a3yh.gz
+C:\Users\User\source\repos\RazorPageApplications\E-Learning Platform\obj\Debug\net9.0\compressed\k7x24t14yo-b6pcbohrch.gz

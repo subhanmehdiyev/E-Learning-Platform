@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fQBAXS/SeIxRWdi+KW2Nr+2k/5AePJyCSPDwj5avScA=",
+  "Hash": "Baz7iUILZHVY5geGHU0kXb5gDB/gEWCXwk0fJUDo/co=",
   "Source": "E-Learning Platform",
   "BasePath": "_content/E-Learning Platform",
   "Mode": "Default",
@@ -2663,12 +2663,12 @@
       "OriginalItemSpec": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-3ofiw8a3yh.gz",
+      "Identity": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-b6pcbohrch.gz",
       "SourceId": "E-Learning Platform",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/E-Learning Platform",
-      "RelativePath": "css/site#[.{fingerprint=3ofiw8a3yh}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=b6pcbohrch}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2677,8 +2677,8 @@
       "RelatedAsset": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "cgowin9zl7",
-      "Integrity": "zKGEyTN770R1gpNFMSzKW0rj5CITkMD0vQpvZc9Vb0A=",
+      "Fingerprint": "xsyroiv7c7",
+      "Integrity": "8TgZPD6bL19LbQBqv1dP1Pv3Nj70fiXEpmudgDQ6GFg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\css\\site.css"
@@ -4042,8 +4042,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3ofiw8a3yh",
-      "Integrity": "079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k=",
+      "Fingerprint": "b6pcbohrch",
+      "Integrity": "cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -4070,12 +4070,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\images\\First_Page_Background.jpg",
+      "Identity": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\images\\First_Page_Background.jpeg",
       "SourceId": "E-Learning Platform",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\",
       "BasePath": "_content/E-Learning Platform",
-      "RelativePath": "images/First_Page_Background#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/First_Page_Background#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -4084,11 +4084,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zg2jmyu2lv",
-      "Integrity": "Q5Hc53nEAu4kczX8ueGTDpeRN1yFvQBiSozVaf3PrlE=",
+      "Fingerprint": "ahucomsbny",
+      "Integrity": "sip0nJg7OrHfVSodtTl14k8Aye/rct0mxVYB404783Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\First_Page_Background.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\First_Page_Background.jpeg"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\js\\site.js",
@@ -5374,13 +5374,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.3ofiw8a3yh.css",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-3ofiw8a3yh.gz",
+      "Route": "css/site.b6pcbohrch.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-b6pcbohrch.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003115264798"
+          "Quality": "0.003205128205"
         }
       ],
       "ResponseHeaders": [
@@ -5390,15 +5390,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "320"
+          "Value": "311"
         },
         {
           "Name": "ETag",
-          "Value": "\"zKGEyTN770R1gpNFMSzKW0rj5CITkMD0vQpvZc9Vb0A=\""
+          "Value": "\"8TgZPD6bL19LbQBqv1dP1Pv3Nj70fiXEpmudgDQ6GFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Apr 2025 12:27:45 GMT"
+          "Value": "Thu, 10 Apr 2025 11:27:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5418,13 +5418,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k=\""
+          "Value": "W/\"cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3ofiw8a3yh"
+          "Value": "b6pcbohrch"
         },
         {
           "Name": "label",
@@ -5432,12 +5432,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k="
+          "Value": "sha256-cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q="
         }
       ]
     },
     {
-      "Route": "css/site.3ofiw8a3yh.css",
+      "Route": "css/site.b6pcbohrch.css",
       "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5447,7 +5447,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "669"
+          "Value": "650"
         },
         {
           "Name": "Content-Type",
@@ -5455,11 +5455,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k=\""
+          "Value": "\"cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Apr 2025 12:27:45 GMT"
+          "Value": "Thu, 10 Apr 2025 11:27:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5469,7 +5469,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3ofiw8a3yh"
+          "Value": "b6pcbohrch"
         },
         {
           "Name": "label",
@@ -5477,13 +5477,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k="
+          "Value": "sha256-cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q="
         }
       ]
     },
     {
-      "Route": "css/site.3ofiw8a3yh.css.gz",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-3ofiw8a3yh.gz",
+      "Route": "css/site.b6pcbohrch.css.gz",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-b6pcbohrch.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5492,7 +5492,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "320"
+          "Value": "311"
         },
         {
           "Name": "Content-Type",
@@ -5500,11 +5500,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zKGEyTN770R1gpNFMSzKW0rj5CITkMD0vQpvZc9Vb0A=\""
+          "Value": "\"8TgZPD6bL19LbQBqv1dP1Pv3Nj70fiXEpmudgDQ6GFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Apr 2025 12:27:45 GMT"
+          "Value": "Thu, 10 Apr 2025 11:27:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5522,7 +5522,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3ofiw8a3yh"
+          "Value": "b6pcbohrch"
         },
         {
           "Name": "label",
@@ -5530,7 +5530,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zKGEyTN770R1gpNFMSzKW0rj5CITkMD0vQpvZc9Vb0A="
+          "Value": "sha256-8TgZPD6bL19LbQBqv1dP1Pv3Nj70fiXEpmudgDQ6GFg="
         }
       ]
     },
@@ -5573,12 +5573,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-3ofiw8a3yh.gz",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-b6pcbohrch.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003115264798"
+          "Quality": "0.003205128205"
         }
       ],
       "ResponseHeaders": [
@@ -5588,15 +5588,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "320"
+          "Value": "311"
         },
         {
           "Name": "ETag",
-          "Value": "\"zKGEyTN770R1gpNFMSzKW0rj5CITkMD0vQpvZc9Vb0A=\""
+          "Value": "\"8TgZPD6bL19LbQBqv1dP1Pv3Nj70fiXEpmudgDQ6GFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Apr 2025 12:27:45 GMT"
+          "Value": "Thu, 10 Apr 2025 11:27:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5616,13 +5616,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k=\""
+          "Value": "W/\"cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k="
+          "Value": "sha256-cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q="
         }
       ]
     },
@@ -5637,7 +5637,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "669"
+          "Value": "650"
         },
         {
           "Name": "Content-Type",
@@ -5645,11 +5645,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k=\""
+          "Value": "\"cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Apr 2025 12:27:45 GMT"
+          "Value": "Thu, 10 Apr 2025 11:27:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5659,13 +5659,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-079d6N9TYO5JrdWqTosoibGpeObQ/VnNtSGFuLsNA1k="
+          "Value": "sha256-cyVT1pmW7zhl5svrf88xZfpfJFovJX0pUhdn5TF95/Q="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-3ofiw8a3yh.gz",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\obj\\Debug\\net9.0\\compressed\\k7x24t14yo-b6pcbohrch.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5674,7 +5674,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "320"
+          "Value": "311"
         },
         {
           "Name": "Content-Type",
@@ -5682,11 +5682,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zKGEyTN770R1gpNFMSzKW0rj5CITkMD0vQpvZc9Vb0A=\""
+          "Value": "\"8TgZPD6bL19LbQBqv1dP1Pv3Nj70fiXEpmudgDQ6GFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Apr 2025 12:27:45 GMT"
+          "Value": "Thu, 10 Apr 2025 11:27:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5704,7 +5704,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zKGEyTN770R1gpNFMSzKW0rj5CITkMD0vQpvZc9Vb0A="
+          "Value": "sha256-8TgZPD6bL19LbQBqv1dP1Pv3Nj70fiXEpmudgDQ6GFg="
         }
       ]
     },
@@ -15171,8 +15171,8 @@
       ]
     },
     {
-      "Route": "images/First_Page_Background.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\images\\First_Page_Background.jpg",
+      "Route": "images/First_Page_Background.ahucomsbny.jpeg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\images\\First_Page_Background.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15181,7 +15181,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "381353"
+          "Value": "410985"
         },
         {
           "Name": "Content-Type",
@@ -15189,48 +15189,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q5Hc53nEAu4kczX8ueGTDpeRN1yFvQBiSozVaf3PrlE=\""
+          "Value": "\"sip0nJg7OrHfVSodtTl14k8Aye/rct0mxVYB404783Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 10:34:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Q5Hc53nEAu4kczX8ueGTDpeRN1yFvQBiSozVaf3PrlE="
-        }
-      ]
-    },
-    {
-      "Route": "images/First_Page_Background.zg2jmyu2lv.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\images\\First_Page_Background.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "381353"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Q5Hc53nEAu4kczX8ueGTDpeRN1yFvQBiSozVaf3PrlE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 10:34:16 GMT"
+          "Value": "Thu, 10 Apr 2025 11:58:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15240,15 +15203,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zg2jmyu2lv"
+          "Value": "ahucomsbny"
         },
         {
           "Name": "label",
-          "Value": "images/First_Page_Background.jpg"
+          "Value": "images/First_Page_Background.jpeg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Q5Hc53nEAu4kczX8ueGTDpeRN1yFvQBiSozVaf3PrlE="
+          "Value": "sha256-sip0nJg7OrHfVSodtTl14k8Aye/rct0mxVYB404783Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/First_Page_Background.jpeg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\RazorPageApplications\\E-Learning Platform\\wwwroot\\images\\First_Page_Background.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "410985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sip0nJg7OrHfVSodtTl14k8Aye/rct0mxVYB404783Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 11:58:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sip0nJg7OrHfVSodtTl14k8Aye/rct0mxVYB404783Q="
         }
       ]
     },
