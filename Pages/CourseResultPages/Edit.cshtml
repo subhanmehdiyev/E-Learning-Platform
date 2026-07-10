@@ -1,0 +1,67 @@
+﻿@page
+@model E_Learning_Platform.Pages.CourseResultPages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Results</h1>
+
+<h4>CourseResults</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CourseResults.Id" />
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.StudentEmail" class="control-label"></label>
+                <input asp-for="CourseResults.StudentEmail" class="form-control" />
+                <span asp-validation-for="CourseResults.StudentEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.CourseName" class="control-label"></label>
+                <input asp-for="CourseResults.CourseName" class="form-control" />
+                <span asp-validation-for="CourseResults.CourseName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.CourseAuthorEmail" class="control-label"></label>
+                <input asp-for="CourseResults.CourseAuthorEmail" class="form-control" />
+                <span asp-validation-for="CourseResults.CourseAuthorEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.Quiz1Result" class="control-label"></label>
+                <input asp-for="CourseResults.Quiz1Result" class="form-control" />
+                <span asp-validation-for="CourseResults.Quiz1Result" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.MidtermResult" class="control-label"></label>
+                <input asp-for="CourseResults.MidtermResult" class="form-control" />
+                <span asp-validation-for="CourseResults.MidtermResult" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.Quiz2Result" class="control-label"></label>
+                <input asp-for="CourseResults.Quiz2Result" class="form-control" />
+                <span asp-validation-for="CourseResults.Quiz2Result" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.FinalResult" class="control-label"></label>
+                <input asp-for="CourseResults.FinalResult" class="form-control" />
+                <span asp-validation-for="CourseResults.FinalResult" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseResults.Total" class="control-label"></label>
+                <input asp-for="CourseResults.Total" class="form-control" />
+                <span asp-validation-for="CourseResults.Total" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <input type="submit" value="Save" class="btn btn-outline-primary" /> |
+                <a asp-page="./Index" class="btn btn-outline-secondary" role="button">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

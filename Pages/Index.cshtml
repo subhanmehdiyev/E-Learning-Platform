@@ -1,0 +1,116 @@
+﻿@page
+@using E_Learning_Platform.Models
+@inject SignInManager<User> SignInManager
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    #notsignedInBody {
+    background-image: url("/images/First_Page_Background.jpeg");
+    background-size: cover;
+    }
+
+    #instructorSignedInBody {
+        background-image: url("/images/InstructorBackgroundImage.jpg");
+        background-size: cover;
+    }
+
+    #studentSignedInBody {
+        background-image: url("/images/StudentBackgroundImage.jpg");
+        background-size: cover;
+    }
+
+    #PlatformEntry {
+    background-color: rgba(255, 165, 93, 0.37);
+    height: 75%;
+    position: absolute;
+    transform: translate(75px,50px);
+    padding-top: 75px;
+    }
+
+    #InstructorPage {
+        background-color: rgba(128,83,51,0.5);
+        height: 75%;
+        position: absolute;
+        transform: translate(75px,50px);
+        padding-top: 75px;
+    }
+
+    #StudentPage {
+        background-color: rgba(128,83,51,0.5);
+        height: 75%;
+        position: absolute;
+        transform: translate(75px,50px);
+        padding-top: 75px;
+    }
+
+    #SignedInPagesTexts {
+        transform: translateY(75px);
+        color: aliceblue;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    p {
+    transform: translateY(75px);
+    color: aliceblue;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+    #CourseName {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 100px;
+    margin-top: -60px;
+    }
+
+    #SignUpText {
+    margin-top: -15px;
+    font-style: normal;
+    font-family: 'Century Gothic', sans-serif;
+    color: aliceblue;
+    }
+</style>
+@if(SignInManager.IsSignedIn(User))
+{
+    if (User.FindFirst("Position")?.Value == "Instructor")
+    {
+        <body id="instructorSignedInBody">
+            <div id="InstructorPage">
+                <p class="fs-2 mb-0" id="SignedInPagesTexts">You are welcome, @User.FindFirst("FullName").Value.</p>
+                <p class="fs-2" id="SignedInPagesTexts">Now, it is more easy to manage course in</p>
+                <p id="CourseName">eLP LMS</p>
+                <p id="SignUpText" class="text-end fs-2">
+                    with <a class="text-light" asp-page="/Courses/Index">CoursePanel</a>
+                </p>
+            </div>
+        </body>
+    }
+    else if (User.FindFirst("Position")?.Value == "Student")
+    {
+        <body id="studentSignedInBody">
+            <div id="StudentPage">
+                <p class="fs-2 mb-0" id="SignedInPagesTexts">You are welcome, @User.FindFirst("FullName").Value.</p>
+                <p class="fs-2" id="SignedInPagesTexts">You can find courses in different topics in</p>
+                <p id="CourseName">eLP LMS</p>
+                <p id="SignUpText" class="text-end fs-2">
+                    Go to <a class="text-light" asp-page="/CoursesInCards">Courses</a>
+                </p>
+            </div>
+        </body>
+    }
+}
+else
+{
+    <body id="notsignedInBody">
+        <div id="PlatformEntry">
+            <p class="fs-2">Your Goals are more attainable with</p>
+            <p id="CourseName">eLP LMS</p>
+            <p id="SignUpText" class="text-end fs-2 fw-semibold">
+                <a class="text-light" asp-area="Identity" asp-page="/Account/Register">Register</a> and Begin
+            </p>
+        </div>
+    </body>
+}

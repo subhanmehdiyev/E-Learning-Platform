@@ -1,0 +1,126 @@
+﻿@page
+@using System.Security.Claims
+@model E_Learning_Platform.Pages.GettingResponseModel
+
+@{
+    ViewData["Title"] = "GettingResponse";
+}
+
+<style>
+    body {
+        background-image: url("/images/InstructorBackgroundImage.jpg");
+        background-size: cover;
+    }
+
+    #contentBackground {
+        background-color: white;
+        height: 550px;
+        width: 1200px;
+    }
+
+    #accordionPart {
+        padding-top: 100px;
+    }
+
+    #selectionPart {
+        padding-top: 100px;
+    }
+</style>
+
+<body>
+    <div id="contentBackground" class="row position-absolute top-50 start-50 translate-middle mt-4">
+        <div class="col">
+            <div id="selectionPart">
+                <h3>Select student by email, and download files</h3>
+                <select id="mySelect" class="form-select mt-3" aria-label="Default select example">
+                    <option selected>Select student</option>
+                    @foreach (var email in Model.StudentEmails)
+                    {
+                        <option value="@email">@email</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col" id="accordionPart">
+            <form method="post">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Quiz 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile('Quiz1Response.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Midterm Exam
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile('MidtermResponse.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Quiz 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile('Quiz2Response.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Final Exam
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile('FinalResponse.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    function downloadFile(fileName) 
+    {
+        const dropdown = document.getElementById("mySelect");      
+        const studentEmail = dropdown.options[dropdown.selectedIndex].text;
+
+        const courseId = "@Model.CourseId";
+        const url = `/uploads/StudentResponses/${courseId}/${studentEmail}/${fileName}`;
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) throw new Error("Download failed");
+                return response.blob();
+            })
+            .then(blob => {
+                const link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+                alert("File downloaded successfully!");
+            })
+            .catch(() => alert("Failed to download file."));
+    }
+</script>

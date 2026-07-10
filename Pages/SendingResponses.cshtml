@@ -1,0 +1,32 @@
+﻿@page
+@model E_Learning_Platform.Pages.SendingResponsesModel
+@{
+    ViewData["Title"] = "SendingResponses";
+}
+
+<h1>Enter Responses</h1>
+
+<hr />
+<div class="position-absolute top-50 start-50 translate-middle col-5">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group mb-3">
+            <label class="form-label mb-2">Quiz 1</label>
+            <input class="form-control" type="file" name="StudentResponses.Quiz1Response">
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label mb-2">Midterm Exam</label>
+            <input class="form-control" type="file" name="StudentResponses.MidtermResponse">
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label mb-2">Quiz 2</label>
+            <input class="form-control" type="file" name="StudentResponses.Quiz2Response">
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label mb-2">Final Exam</label>
+            <input class="form-control" type="file" name="StudentResponses.FinalResponse">
+        </div>
+        <div class="form-group mb-3" method="post">
+            <input type="submit" value="Save" class="btn btn-outline-primary" />
+        </div>
+    </form>
+</div>

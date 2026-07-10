@@ -1,0 +1,140 @@
+﻿@page
+@using System.Security.Claims
+@model E_Learning_Platform.Pages.BeginedCourseModel
+
+@{
+    ViewData["Title"] = "BeginedCourse";
+}
+
+<style>
+    body {
+        background-image: url("/images/StudentBackgroundImage.jpg");
+        background-size: cover;
+    }
+
+    #contentBackground {
+        background-color: white;
+        height: 550px;
+        width: 1200px;
+    }
+
+    #accordionPart {
+        padding-top: 60px;
+    }
+
+    #descriptionOfCourse {
+        padding-top: 60px;
+    }
+</style>
+
+<body>
+    <div id="contentBackground" class="row position-absolute top-50 start-50 translate-middle mt-4">
+        <div class="col">
+            <div id="descriptionOfCourse">
+                <h1>@Html.DisplayFor(modelItem => Model.Course.Name)</h1>
+                <p class="fs-4">@Html.DisplayFor(modelItem => Model.Course.Description)</p>
+            </div>
+        </div>
+        <div class="col" id="accordionPart">
+            <form method="post">
+                <div class="text-center fs-5 mb-4">
+                    <p>Download and look through files, prepare responses in new files and save them</p>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Read Material
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile(@Model.Course.Id,'ReadMaterial.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Quiz 1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile(@Model.Course.Id,'Quiz1.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Midterm Exam
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile(@Model.Course.Id,'MidtermExam.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Quiz 2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile(@Model.Course.Id,'Quiz2.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Final Exam
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="#" onclick="downloadFile(@Model.Course.Id,'FinalExam.docx'); return false;">Download File</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Save Responses" class="btn btn-outline-primary col-4 ms-3 mt-3" />
+                    @if (Model.IsVisibleDelete)
+                    {
+                        <a asp-page-handler="Delete" asp-route-id="@Model.Course.Id" class="btn btn-outline-danger col-4 ms-3 mt-3" role="button">
+                            Delete Responses
+                        </a>
+                    }
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    function downloadFile(courseId, fileName) 
+    {
+        const url = `/uploads/CourseMaterials/${courseId}/${fileName}`;
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) throw new Error("Download failed");
+                return response.blob();
+            })
+            .then(blob => {
+                const link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+                alert("File downloaded successfully!");
+            })
+            .catch(() => alert("Failed to download file."));
+    }
+</script>
